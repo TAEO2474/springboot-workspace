@@ -2,6 +2,7 @@ package com.example.spring01_mvc.part01.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import com.example.spring01_mvc.part01.dto.HelloDTO;
 
@@ -9,6 +10,7 @@ import com.example.spring01_mvc.part01.dto.HelloDTO;
 //http://localhost:8090/hello
 @Controller
 public class HelloController {
+
 	@GetMapping(value="/hello")
 	@ResponseBody
 	public String hell0() {
